@@ -1,0 +1,112 @@
+body{}
+header{
+	background-color: #333;
+	height: 100px;
+}
+header > h1{
+	text-align: center;
+	font-size: 50px;
+	padding: 20px;
+	color: red;
+}
+nav{}
+nav > ul{
+	background-color: black;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+nav > ul > li{
+	float: left;
+}
+nav > ul > li > a{
+	display: block;
+  	color: white;
+  	text-align: center;
+  	padding: 15px;
+  	text-decoration: none;
+}
+nav > ul > li > a:hover{
+	background-color: red;
+}
+nav > ul > li  > a:hover:not(.derecha) {
+  background-color: red;
+}
+
+.derecha {
+  background-color: #4CAF50;
+}
+main{}
+.principal{}
+article{
+	border: 5px solid red;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	max-width: 75%;
+	overflow: auto;
+	text-align: left;
+}
+h2{
+	margin: 10px;
+}
+p{
+	margin: 10px;
+}
+img{
+	width: 150px;
+	height: 100px;
+	overflow: auto;
+	float: right;
+	margin: 15px;
+}
+aside{
+	overflow: auto;
+	clear: right;
+}
+footer{
+	background-color: black;
+}
+.footer1{
+	float: left;
+	margin-left: 20%;
+	padding: 10px;
+}
+.footer2{
+	display: inline-block;
+	margin-left: 12.5%;
+	padding: 10px;
+}
+.footer3{
+	display: inline-block;
+	float: right;
+	margin-right: 20%;
+	padding: 10px;
+}
+footer > .footer1 > a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	margin: 10px;
+}
+footer > .footer2 > a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	margin: 10px;
+}
+footer > .footer3 > a {
+	color: white;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	margin: 10px;
+}
+footer > p {
+	color: white;
+	text-align: center;
+	padding: 10px;
+	background-color: #333;
+}
