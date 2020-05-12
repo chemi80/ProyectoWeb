@@ -1,4 +1,6 @@
-body{}
+body{
+	width: 100%;
+}
 header{
 	background-color: #333;
 	height: 100px;
@@ -21,29 +23,60 @@ nav > ul > li{
 	float: left;
 }
 nav > ul > li > a{
-	display: block;
   	color: white;
+  	display: block;
   	text-align: center;
   	padding: 15px;
   	text-decoration: none;
+  	width: 100px;
 }
 nav > ul > li > a:hover{
 	background-color: red;
 }
-nav > ul > li  > a:hover:not(.derecha) {
+nav > ul > li  > a:hover(.derecha) {
   background-color: red;
 }
-
+nav > ul > li > ul{
+	display: none;
+	position: absolute;
+	background-color: black;
+	list-style-type: none;
+	margin: auto;
+	padding: 0;
+	overflow: hidden;
+}
+nav > ul > li:hover > ul{
+	display: block;
+}
+nav > ul > li > ul > li{
+	position: relative;
+}
+nav > ul > li > ul > li > a{
+	color: white;
+  	display: block;
+  	text-align: center;
+  	padding: 15px;
+  	text-decoration: none;
+  	width: 100px;
+}
+nav > ul > li > ul > li > a:hover{
+	background-color: red;
+}
 .derecha {
   background-color: #4CAF50;
 }
-main{}
-.principal{}
+main{
+	width: 100%;
+	display: table;
+}
+.principal{
+	width: 70%;
+	float: left;
+}
 article{
 	border: 5px solid red;
 	margin-top: 10px;
 	margin-bottom: 10px;
-	max-width: 75%;
 	overflow: auto;
 	text-align: left;
 }
@@ -61,9 +94,20 @@ img{
 	margin: 15px;
 }
 aside{
-	overflow: auto;
-	clear: right;
+	width: 25%;
+	margin-right: 40px;
+	margin-top: 10px;
+	float: right;
+	background-color: #333;
+	border: 5px solid red;
 }
+h3{
+	color: red;
+}
+iframe{
+	margin-bottom: 30px;
+}
+
 footer{
 	background-color: black;
 }
@@ -109,4 +153,44 @@ footer > p {
 	text-align: center;
 	padding: 10px;
 	background-color: #333;
+}
+footer > .footer1 > a:hover{
+	color: red;
+}
+footer > .footer2 > a:hover{
+	color: red;
+}
+footer > .footer3 > a:hover{
+	color: red;
+}
+
+
+
+
+form{
+	margin: 10px;
+}
+fieldset{
+	width: 75%;
+}
+legend{
+	color: red;
+	font-size: 30px;
+}
+label{
+	font-weight: bold;
+	font-size: 20px;
+}
+input{
+	border-radius: 5px;
+	width: 500px;
+	height: 30px;
+	font-size: 15px;
+	margin: 10px;
+	text-align: center;
+}
+textarea{
+	border-radius: 5px;
+	width: 500px;
+	height: 100px;
 }
