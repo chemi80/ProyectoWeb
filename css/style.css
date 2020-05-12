@@ -65,6 +65,9 @@ nav > ul > li > ul > li > a:hover{
 .derecha {
   background-color: #4CAF50;
 }
+
+/*INDEX*/
+
 main{
 	width: 100%;
 	display: table;
@@ -165,17 +168,17 @@ footer > .footer3 > a:hover{
 }
 
 
-
+/*FORMULARIO*/
 
 form{
 	margin: 10px;
 }
 fieldset{
-	width: 75%;
+	width: 50%;
+	background-color: #333;
 }
-legend{
-	color: red;
-	font-size: 30px;
+form > fieldset > h2{
+	color:red;
 }
 label{
 	font-weight: bold;
@@ -184,13 +187,27 @@ label{
 input{
 	border-radius: 5px;
 	width: 500px;
-	height: 30px;
-	font-size: 15px;
+	height: 50px;
+	font-size: 25px;
 	margin: 10px;
 	text-align: center;
 }
 textarea{
 	border-radius: 5px;
 	width: 500px;
-	height: 100px;
+	height: 200px;
+}
+input[type=submit]{
+	background-color: black;
+	color: white;
+}
+input[type=reset]{
+	background-color: black;
+	color: white;
+}
+input[type=submit]:hover{
+	background-color: red;
+}
+input[type=reset]:hover{
+	background-color: red;
 }

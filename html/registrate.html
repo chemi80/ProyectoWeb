@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Iniciar sesión</title>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script type="text/javascript" src="../js/registro.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Mi Página Web</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="../index.html">Inicio</a>
+				<ul>
+					<li><a href="catalogo.html">Catálogo</a></li>
+					<li><a href="acercade.html">Acerca de</a></li>
+					<li><a href="foro.html">Foro</a></li>
+				</ul>
+			</li>
+
+			<li><a href="catalogo.html">Catálogo</a></li>
+			<li><a href="acercade.html">Acerca de</a></li>
+			<li><a href="foro.html">Foro</a></li>
+			<li style="float: right;"><a class="derecha" href="">Inicia sesión</a></li>
+			<li style="float: right;"><a class="derecha" href="registrate.html">Regístrate</a></li>
+		</ul>
+	</nav>
+
+	<center>
+	<form onsubmit="return validar()">
+		<fieldset>
+			<input type="text" name="usuario" id="usuario" placeholder="Usuario"><br>
+			<input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+			<input type="submit" name="guardar" onclick="obtenerUsuario(); obtenerContraseña();crearUsuario();" value="Registrarse">
+			<input type="reset" name="delete" value="Borrar los datos introducidos">
+			<p style="color: white">¿Ya tienes una cuenta? | <a href="iniciarsesion.html" style="color: blue;">Inicia sesión</a></p>
+		</fieldset>
+	</form>
+	</center>
+	<footer>
+		<div class="footer1">
+			<a href="">Localiza tu tienda</a>
+			<a href="">Trabaja con nosotros</a>
+			<a href="">Nuestros compromisos</a>
+			<a href="">Abre tu franquicia</a>
+		</div>		
+		<div class="footer2">		
+			<a href="contacto.html">Contáctanos</a>
+			<a href="">Preguntas frecuentes</a>
+			<a href="">Mapa web</a>
+			<a href="">Sala de prensa</a>
+		</div>	
+		<div class="footer3">
+			<a href="">Privacidad</a>
+			<a href="">Aviso legal</a>
+			<a href="">Política de publicación</a>
+			<a href="">Política de cookies</a>
+		</div>
+		<p>©2020 Copyright MiPáginaWeb.com</p>
+	</footer>
+</body>
+</html>
