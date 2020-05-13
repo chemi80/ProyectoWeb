@@ -38,7 +38,7 @@ function Login(usuario,contraseña){
 
 	for (var i=0; i < arrayUsuario.length; i++){
 		if (( usuario == arrayUsuario[i]) && ( contraseña == arrayContraseña[i])){
-			window.location="index.html";
+			window.location="../index.html";
 			return true;
 		}
 		else{

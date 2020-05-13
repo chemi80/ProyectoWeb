@@ -1,0 +1,13 @@
+<!ELEMENT questions (question+)>
+
+<!ELEMENT question (h2,answer)>
+<!ATTLIST question CDATA #FIXED ''>
+
+<!ELEMENT h2 (#PCDATA)>
+<!ATTLIST h2 CDATA #FIXED ''>
+
+<!ELEMENT answer (p+)>
+<!ATTLIST answer CDATA #FIXED ''>
+
+<!ELEMENT p (#PCDATA)>
+<!ATTLIST p CDATA #FIXED ''>

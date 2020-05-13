@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+	<xsl:template match="/">
+		<html>
 <head>
-	<title>Contáctanos</title>
+	<title></title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<script type="text/javascript" src="../js/validar.js"></script>
 </head>
 <body>
-	<audio autoplay loop>
-		<source src="../audio/get-outside-jason-farnham-no-copyright-music.mp3" type="audio/mp3" volumen="80" width="0" height="0">
-	</audio>
 	<header>
 		<h1>Mi Página Web</h1>
 	</header>
@@ -17,34 +16,53 @@
 			<li><a href="../index.html">Inicio</a>
 				<ul>
 					<li><a href="catalogo.html">Catálogo</a></li>
-					<li><a href="../xsl/acercade.xsl">Acerca de</a></li>
+					<li><a href="acercade.html">Acerca de</a></li>
 					<li><a href="foro.html">Foro</a></li>
 				</ul>
 			</li>
 
 			<li><a href="catalogo.html">Catálogo</a></li>
-			<li><a href="../xsl/acercade.xsl">Acerca de</a></li>
+			<li><a href="acercade.html">Acerca de</a></li>
 			<li><a href="foro.html">Foro</a></li>
 			<li style="float: right;"><a class="derecha" href="iniciarsesion.html">Inicia sesión</a></li>
 			<li style="float: right;"><a class="derecha" href="">Regístrate</a></li>
 		</ul>
 	</nav>
+	
+			        <section>
+			            <h2>Acerca de nosotros</h2>
+			            <p align="center"><iframe width="560" height="315" src=""></iframe></p>
+					<div >
+						  <p>Nosotros</p>
+							<xsl:for-each select="questions/question">
+								<li>
+									<a>
+										<xsl:value-of select="h2"/>
+									</a>
+								</li>
+							</xsl:for-each>
+							<li>
+								<a href="nosotros.xml">Back to Top</a>
+							</li>
+					</div>
+					</section>
+						<div>
+							<xsl:for-each select="questions/question">
+								<div>
+									<h2>
+										<xsl:value-of select="h2"/>
+									</h2>
+									<xsl:for-each select="answer/p">
+										<p>
+											<xsl:value-of select="."/>
+										</p>
+									</xsl:for-each>
+								</div>
+							</xsl:for-each>
+						</div>
+					</div>
 
-	<center>
-	<form onsubmit="return validar()">
-		<fieldset>
-			<h2>CONTÁCTANOS</h2>
-			<input type="text" name="nom" id="nombre" placeholder="Nombre"><br>
-			<input type="text" name="apes" id="apellidos" placeholder="Apellidos"><br>
-			<input type="email" name="email" id="correo" placeholder="Correo electrónico"><br>
-			<input type="tel" name="tlf" id="telefono" placeholder="Teléfono"><br><br>
-			<textarea name="texto" id="textarea" placeholder="..."></textarea><br><br>
-			<input type="submit" name="guardar" value="Guardar cambios">
-			<input type="reset" name="delete" value="Borrar los datos introducidos">
-		</fieldset>
-	</form>
-	</center>
-	<footer>
+			        <footer>
 		<div class="footer1">
 			<a href="">Localiza tu tienda</a>
 			<a href="">Trabaja con nosotros</a>
@@ -67,3 +85,5 @@
 	</footer>
 </body>
 </html>
+	</xsl:template>
+</xsl:stylesheet>
