@@ -25,19 +25,26 @@ function validar_contraseña(){
 	alert('[ERROR] Contraseña no válida')
 	return false;
 }
-function Usuarios(usuario, contraseña){
-	this.usuario=usuario;
-	this.contraseña=contraseña;
+
+function Login(usuario,contraseña){
+
+	var usuario = document.getElementById("usuario").value;
+	var contraseña = document.getElementById("contraseña").value;
+
+	var i=0;
+	var arrayUsuario = ["usuario1", "usuario2", "usuario3"];
+	var arrayContraseña = ["passwd1", "passwd2", "passwd3"];
+
+
+	for (var i=0; i < arrayUsuario.length; i++){
+		if (( usuario == arrayUsuario[i]) && ( contraseña == arrayContraseña[i])){
+			window.location="index.html";
+			return true;
+		}
+		else{
+			alert("[ERROR] Acceso Denegado");
+			return false;
+		}
+	}	
 }
-function obtenerUsuario(){
-	var obtenerU = document.getElementById("usuario").value;
-	return obtenerU;
-}
-function obtenerContraseña(){
-	var obtenerC = document.getElementById("contraseña").value;
-	return obtenerC;
-}
-function crearUsuario(){
-	var registro = new Usuario(obtenerUsuario, obtenerContraseña);
-	document.write(registro.nombre, registro.contraseña);
-}
+
