@@ -32,18 +32,16 @@ function Login(usuario,contraseña){
 	var contraseña = document.getElementById("contraseña").value;
 
 	var i=0;
-	var arrayUsuario = ["usuario1", "usuario2", "usuario3"];
-	var arrayContraseña = ["passwd1", "passwd2", "passwd3"];
+	var arrayUsuario = ["usuario1","usuario2"];
+	var arrayContraseña = ["passwd1","passwd2"];
 
 
 	for (var i=0; i < arrayUsuario.length; i++){
 		if (( usuario == arrayUsuario[i]) && ( contraseña == arrayContraseña[i])){
 			window.location="../index.html";
-			return true;
 		}
 		else{
 			alert("[ERROR] Acceso Denegado");
-			return false;
 		}
 	}	
 }

@@ -3,13 +3,22 @@ body{
 }
 header{
 	background-color: #333;
-	height: 100px;
+	animation-name: banner;
+	animation-duration: 12s;
+	animation-iteration-count: infinite;
 }
 header > h1{
 	text-align: center;
 	font-size: 50px;
-	padding: 20px;
-	color: red;
+	padding: 50px;
+	color: white;
+}
+@keyframes banner{
+	0%   {background-color:red}
+  	25%  {background-color:#333}
+  	50%  {background-color:black}
+  	75%  {background-color:#333}
+  	100% {background-color:red}
 }
 nav{}
 nav > ul{
@@ -36,32 +45,6 @@ nav > ul > li > a:hover{
 nav > ul > li  > a:hover(.derecha) {
   background-color: red;
 }
-nav > ul > li > ul{
-	display: none;
-	position: absolute;
-	background-color: black;
-	list-style-type: none;
-	margin: auto;
-	padding: 0;
-	overflow: hidden;
-}
-nav > ul > li:hover > ul{
-	display: block;
-}
-nav > ul > li > ul > li{
-	position: relative;
-}
-nav > ul > li > ul > li > a{
-	color: white;
-  	display: block;
-  	text-align: center;
-  	padding: 15px;
-  	text-decoration: none;
-  	width: 100px;
-}
-nav > ul > li > ul > li > a:hover{
-	background-color: red;
-}
 .derecha {
   background-color: #4CAF50;
 }
@@ -72,9 +55,34 @@ main{
 	width: 100%;
 	display: table;
 }
-.principal{
-	width: 70%;
+.sidenav {
+  	height: 760px;
+  	position: relative;
+	background-color: black;
+	list-style-type: none;
+	margin: auto;
+	padding: 0;
+	overflow: auto;
+	margin-top: 10px;
 	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.sidenav a {
+  	color: white;
+  	display: block;
+  	text-align: center;
+  	padding: 15px;
+  	text-decoration: none;
+  	width: 100px;
+}
+.sidenav a:hover{
+	background-color: red;
+}
+.principal{
+	width: 75%;
+	float: left;
+	position: relative;
 }
 article{
 	border: 5px solid red;
@@ -97,7 +105,7 @@ img{
 	margin: 15px;
 }
 aside{
-	width: 25%;
+	width: 20%;
 	margin-right: 40px;
 	margin-top: 10px;
 	float: right;
@@ -109,6 +117,7 @@ h3{
 }
 iframe{
 	margin-bottom: 30px;
+	width: 250px;
 }
 
 footer{
@@ -174,28 +183,29 @@ form{
 	margin: 10px;
 }
 fieldset{
-	width: 50%;
+	width: 30%;
 	background-color: #333;
+	color: red;
 }
 form > fieldset > h2{
 	color:red;
 }
 label{
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 10px;
 }
 input{
 	border-radius: 5px;
-	width: 500px;
-	height: 50px;
-	font-size: 25px;
-	margin: 10px;
+	width: 300px;
+	height: 30px;
+	font-size: 10px;
+	margin: 5px;
 	text-align: center;
 }
 textarea{
 	border-radius: 5px;
-	width: 500px;
-	height: 200px;
+	width: 300px;
+	height: 150px;
 }
 input[type=submit]{
 	background-color: black;
