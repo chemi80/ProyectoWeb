@@ -1,0 +1,7 @@
+<!ELEMENT jugadores (jugador+)>
+
+<!ELEMENT jugador (nombre,consola,puntos)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT consola (#PCDATA)>
+<!ELEMENT puntos (#PCDATA)>

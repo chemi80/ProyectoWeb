@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/competitivo.xsl"?>
+<!DOCTYPE jugadores SYSTEM "../dtd/competitivo.dtd">
+<jugadores>
+  <jugador>
+    <nombre>Willyrex</nombre>
+    <consola>PS4</consola>
+    <puntos>1000000</puntos>
+  </jugador>
+  <jugador>
+    <nombre>Ninja</nombre>
+    <consola>PC</consola>
+    <puntos>900000</puntos>
+  </jugador>
+  <jugador>
+    <nombre>Tfue</nombre>
+    <consola>PC</consola>
+    <puntos>800000</puntos>
+  </jugador>
+  <jugador>
+    <nombre>JordiENP</nombre>
+    <consola>XBOX</consola>
+    <puntos>700000</puntos>
+  </jugador>
+  <jugador>
+    <nombre>Ibai</nombre>
+    <consola>XBOX</consola>
+    <puntos>600000</puntos>
+  </jugador>
+  <jugador>
+    <nombre>Auron</nombre>
+    <consola>PC</consola>
+    <puntos>500000</puntos>
+  </jugador>
+    <jugador>
+    <nombre>DJMariio</nombre>
+    <consola>PS4</consola>
+    <puntos>400000</puntos>
+  </jugador>
+  <jugador>
+    <nombre>TheGrefg</nombre>
+    <consola>PS4</consola>
+    <puntos>300000</puntos>
+  </jugador>
+  <jugador>
+    <nombre>Vegetta</nombre>
+    <consola>PC</consola>
+    <puntos>200000</puntos>
+  </jugador>
+  <jugador>
+    <nombre>Kun Agüero</nombre>
+    <consola>XBOX</consola>
+    <puntos>100000</puntos>
+  </jugador>
+</jugadores>
