@@ -1,0 +1,7 @@
+<!ELEMENT empleados (empleado+)>
+
+<!ELEMENT empleado (nombre,edad,puesto)>
+
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT puesto (#PCDATA)>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="../xsl/empleados.xsl"?>
+<!DOCTYPE empleados SYSTEM "../dtd/empleados.dtd">
+<empleados>
+ <empleado>
+  <nombre>Luis Rodríguez Pérez</nombre>
+  <edad>48</edad>
+  <puesto>Presidente</puesto>
+ </empleado>
+  <empleado>
+  <nombre>María Pérez Mellado</nombre>
+  <edad>34</edad>
+  <puesto>Vicepresidenta</puesto>
+ </empleado>
+  <empleado>
+  <nombre>Laura Díaz Rojas</nombre>
+  <edad>27</edad>
+  <puesto>Coordinadora</puesto>
+ </empleado>
+  <empleado>
+  <nombre>Raúl Sánchez Castro</nombre>
+  <edad>43</edad>
+  <puesto>Jefe de Ventas</puesto>
+ </empleado>
+  <empleado>
+  <nombre>Óscar González Mena</nombre>
+  <edad>25</edad>
+  <puesto>Diseñador Web</puesto>
+ </empleado>
+  <empleado>
+  <nombre>Amanda Ruíz Vera</nombre>
+  <edad>26</edad>
+  <puesto>RRPP</puesto>
+ </empleado>
+</empleados>
