@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="../xsl/empleados.xsl"?>
 <!DOCTYPE empleados SYSTEM "../dtd/empleados.dtd">
-<empleados>
+<empleados  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../dtd/empleados.xsd">
  <empleado>
   <nombre>Luis Rodríguez Pérez</nombre>
   <edad>48</edad>
