@@ -5,9 +5,9 @@
    <body>
     <h2>Lista de empleados</h2>
     <xsl:for-each select="empleados/empleado">
-     <xsl:value-of select="nombre"/>
-     <xsl:value-of select="edad"/>
-     <xsl:value-of select="puesto"/>
+     <xsl:value-of select="nombre"/><br></br>
+     <xsl:value-of select="edad"/><br></br>
+     <xsl:value-of select="puesto"/><br></br><br></br>
     </xsl:for-each>
    </body>
   </html>

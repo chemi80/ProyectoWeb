@@ -6,8 +6,8 @@
   <h2>TOP 10 jugadores</h2>
   <table border="1">
     <tr bgcolor="red">
-      <th style="text-align:left">Nombre</th>
-      <th style="text-align:left">Plataforma</th>
+      <th style="text-align:center">Nombre</th>
+      <th style="text-align:center">Plataforma</th>
       <th style="text-align:center">Puntuación</th>
     </tr>
     <xsl:for-each select="jugadores/jugador">
