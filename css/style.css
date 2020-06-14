@@ -115,7 +115,7 @@ aside{
 h3{
 	color: red;
 }
-iframe{
+.video{
 	margin-bottom: 30px;
 	width: 250px;
 }
@@ -253,4 +253,67 @@ input[type=reset]:hover{
 	margin: 20px;
 	font-size: 35px;
 	color: green;
+}
+
+
+/*COMPETITIVO*/
+table{
+	border: 5px solid red;
+}
+
+th{
+	text-align: center;
+	padding: 10px;
+	width: 300px;
+	font-size: 25px;
+	background-color: black;
+	color: red;
+	border: 5px solid red;
+}
+
+td{
+	border: 5px solid red;
+	font-size: 20px;
+	text-align: center;
+}
+
+
+/*EMPLEADOS*/
+.tituloxsl{
+	margin:20px;
+	text-decoration: underline;
+	font-size: 30px;
+
+}
+.empleado{
+	border: 5px solid red;
+	display: inline-block;
+	margin: 10px;
+	width: 200px;
+}
+.nombre{
+	text-align: center;
+	margin: 20px;
+	font-weight: bold;
+}
+.edad{
+	text-align: center;
+	margin: 20px;
+	font-weight: bold;
+}
+.puesto{
+	text-align: center;
+	margin: 20px;
+	font-weight: bold;
+}
+
+.xsla{
+	width: 1200px;
+	height: 550px;
+	border: none;
+}
+.xslb{
+	width: 1000px;
+	height: 1100px;
+	border: none;
 }
